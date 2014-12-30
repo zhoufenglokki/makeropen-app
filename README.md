@@ -2,11 +2,13 @@ makeropen-app
 =============
 
 ## 参考资料
-### angularjs资料：
-- http://www.w3cschool.cc/angularjs/
-- http://docs.angularjs.cn/
-
-### ionic资料：
+### ionic
 - http://ionicframework.com
 - http://codepen.io/ionic/
+
+### angularjs
+- http://www.w3cschool.cc/angularjs/
+- http://docs.angularjs.cn/
+ 
+### cordova
 - http://cordova.apache.org
