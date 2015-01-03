@@ -6,24 +6,25 @@
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:exampleConfig/spring-context.xml</param-value>
+		<param-value>classpath:edgeserverConfig/spring-context.xml</param-value>
 	</context-param>
 	<listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener> 
 
 	<servlet>
-		<servlet-name>springServlet</servlet-name>
+		<servlet-name>springmvc</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:exampleConfig/springmvc-servlet.xml</param-value>
+			<param-value>classpath:edgeserverConfig/springmvc-servlet.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>springServlet</servlet-name>
+		<servlet-name>springmvc</servlet-name>
 		<url-pattern>*.do</url-pattern>
+		<url-pattern>*.json</url-pattern>
 	</servlet-mapping>
 
 	<welcome-file-list>

@@ -77,6 +77,11 @@ encoding//<project>=UTF-8
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.2.6.v20141205</version>
+				<configuration>
+					<webApp>
+						<contextPath>/edgewar</contextPath>
+					</webApp>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

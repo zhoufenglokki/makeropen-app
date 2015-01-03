@@ -1,4 +1,10 @@
 {
   "name": "makeropen",
-  "app_id": ""
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/edgewar",
+      "proxyUrl": "http://localhost:8080/edgewar"
+    }
+  ]
 }

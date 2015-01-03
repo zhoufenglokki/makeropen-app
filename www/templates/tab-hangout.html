@@ -1,0 +1,12 @@
+<ion-view view-title="快速联系方法">
+    <ion-content>
+        <div>创客岛</div>
+        <ion-list>
+            <ion-item class="item-avatar" ng-repeat="hangout in hangoutList" type="item-text-wrap" href="#/tab/hangout/{{hangout.id}}">
+                <img ng-src="{{hangout.face}}">
+                {{hangout.name}} 电话:{{hangout.phone}} 地址:{{hangout.addr}}
+            </ion-item>
+        </ion-list>
+        <div>沙龙点 </div>
+    </ion-content>
+</ion-view>

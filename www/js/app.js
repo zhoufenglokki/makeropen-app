@@ -53,12 +53,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.todo', {
+      url: '/todo',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-todo': {
+          templateUrl: 'templates/tab-todo.html',
+          controller: 'TodoCtrl'
         }
       }
     })
@@ -72,12 +72,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-  .state('tab.friends', {
-      url: '/friends',
+  .state('tab.hangout', {
+      url: '/hangout',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
+        'tab-hangout': {
+          templateUrl: 'templates/tab-hangout.html',
+          controller: 'HangoutCtrl'
         }
       }
     })
