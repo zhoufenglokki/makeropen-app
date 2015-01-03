@@ -13,4 +13,6 @@ proxies in ionic.project with edgewar
 在测试浏览器设置里允许CORS是可以但不安全的方案，经寻求方案后比较好地解决了：
 开源力量大，有个老外给ionic项目贡献了个 pull request，在ionic.project里设置proxies,
 让 ionic 启动的webserver可以将某路径下的请求转代理到springmvc服务器处，在浏览器看来就同源了
+
+在官方 https://github.com/driftyco/ionic-cli/ 的"Service Proxies"有这用法说明
 https://github.com/zhoufenglokki/makeropen-app/blob/master/ionic.project
