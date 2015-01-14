@@ -1,6 +1,9 @@
 package com.makeropen.edgeserver.domain;
 
+import java.time.Instant;
 import java.util.Map;
+
+import com.alibaba.fastjson.JSON;
 
 public class Hangout {
 	private int id;
@@ -9,6 +12,9 @@ public class Hangout {
 	private String addr;
 	private String phone;
 	private String geoPoint;
+	private Instant createTime;
+	private Instant updateTime;
+	
 	private Map<String, String> photoList;
 
 	public int getId() {
@@ -57,5 +63,9 @@ public class Hangout {
 
 	public void setGeoPoint(String geoPoint) {
 		this.geoPoint = geoPoint;
+	}
+	
+	public String toString(){
+		return JSON.toJSONString(this);
 	}
 }

@@ -10,10 +10,14 @@
 	http://www.springframework.org/schema/mvc 
 	http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<context:annotation-config/>
-
-	<import resource="spring-sharenothing.xml" />
-	<import resource="spring-mybatis.xml" />
-	<import resource="spring-env.xml" />
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location"
+			value="file:${processConfigHome}/env.properties" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="properties" value="classpath:/edgeserverProp/env.properties">
+		</property>
+	</bean>
 
 </beans>

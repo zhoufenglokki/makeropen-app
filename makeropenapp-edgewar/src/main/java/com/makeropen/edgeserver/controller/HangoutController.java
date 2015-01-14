@@ -22,7 +22,7 @@ public class HangoutController {
 	
 	@RequestMapping("/queryHangoutByCity.json")
 	public Model queryHangoutByCity(Model model){
-		Map<String, Hangout> hangoutList = hangoutManager.queryHangoutByCity();
+		Map<String, Hangout> hangoutList = hangoutManager.queryHangoutMapByCity();
 		model.addAttribute("hangoutList", hangoutList);
 		model.addAttribute("success", true);
 		return model;
