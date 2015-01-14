@@ -16,3 +16,15 @@ proxies in ionic.project with edgewar
 
 在官方 https://github.com/driftyco/ionic-cli/ 的"Service Proxies"有这用法说明
 https://github.com/zhoufenglokki/makeropen-app/blob/master/ionic.project
+
+## 参考资料
+### ionic
+http://ionicframework.com
+http://codepen.io/ionic/
+
+### angularjs
+http://www.w3cschool.cc/angularjs/
+http://docs.angularjs.cn/
+
+### cordova
+http://cordova.apache.org
