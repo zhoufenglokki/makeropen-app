@@ -19,12 +19,12 @@ https://github.com/zhoufenglokki/makeropen-app/blob/master/ionic.project
 
 ## 参考资料
 ### ionic
-http://ionicframework.com
-http://codepen.io/ionic/
+- http://ionicframework.com
+- http://codepen.io/ionic/
 
 ### angularjs
-http://www.w3cschool.cc/angularjs/
-http://docs.angularjs.cn/
+- http://www.w3cschool.cc/angularjs/
+- http://docs.angularjs.cn/
 
 ### cordova
-http://cordova.apache.org
+- http://cordova.apache.org
