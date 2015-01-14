@@ -1,7 +1,7 @@
 makeropen-app
 =====
 
-Get Thing Done
+Get Things Done
 =====
 2015-1-3
 -----
