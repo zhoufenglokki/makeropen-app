@@ -1,14 +1,14 @@
 <ion-modal-view cache-view="false">
     <ion-header-bar>
-        <h1 class="title">登录</h1>
+        <h1 class="title">根据资料重设密码</h1>
         <div class="buttons">
-            <button class="button button-clear" ng-click="closeLogin()">
+            <button class="button button-clear" ng-click="closeResetPswModal()">
                 取消
             </button>
         </div>
     </ion-header-bar>
     <ion-content>
-        <form ng-submit="doLogin()">
+        <form ng-submit="">
             <div class="list">
                 <label class="item item-input"> <span class="input-label">昵称</span>
                     <input type="text" ng-model="loginData.username">
@@ -16,13 +16,10 @@
                 <label class="item item-input"> <span class="input-label">密码</span>
                     <input type="password" ng-model="loginData.password">
                 </label>
-                <label class="item-checkbox">
-					<input type="checkbox" ng-model="loginData.formSaveToken">
-                    记住后:丢机后用别的手机第一时间登录就安全.
-				</label><a href="" ng-click="resetPswStep1()">忘记密码?</a>
+
                 <label class="item">
                     <button class="button button-block button-positive" type="submit">
-                        登录
+                        提交
                     </button>
 				</label>
             </div>

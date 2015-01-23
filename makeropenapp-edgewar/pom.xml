@@ -80,6 +80,12 @@ encoding//<project>=UTF-8
 
 	<dependencies>
 		<dependency>
+			<groupId>github.rpcappmodel</groupId>
+			<artifactId>rpcappmodel</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>

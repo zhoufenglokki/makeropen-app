@@ -8,11 +8,19 @@
 	http://www.springframework.org/schema/context/spring-context.xsd
 	http://www.springframework.org/schema/mvc 
 	http://www.springframework.org/schema/mvc/spring-mvc.xsd">
-
-	<context:component-scan base-package="com.makeropen.edgeserver.manager"/>
-
+	<!-- 没有好的 @MyBatisMapper，先不用 @MapperScan -->
 	<bean name="hangoutDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.makeropen.edgeserver.dao.HangoutDao"/>
+		<property name="sqlSessionFactory" ref="mybatisSqlSessionFactory"/>
+	</bean>
+
+	<bean name="loginDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.makeropen.edgeserver.dao.LoginDao"/>
+		<property name="sqlSessionFactory" ref="mybatisSqlSessionFactory"/>
+	</bean>
+	
+		<bean name="loginDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.makeropen.edgeserver.dao.UserDao"/>
 		<property name="sqlSessionFactory" ref="mybatisSqlSessionFactory"/>
 	</bean>
 </beans>

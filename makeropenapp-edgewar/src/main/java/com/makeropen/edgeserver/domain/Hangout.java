@@ -1,29 +1,17 @@
 package com.makeropen.edgeserver.domain;
 
-import java.time.Instant;
 import java.util.Map;
 
-import com.alibaba.fastjson.JSON;
+public class Hangout extends BaseDO {
+	private static final long serialVersionUID = 1165073956054466538L;
 
-public class Hangout {
-	private int id;
 	private String name;
 	private String desc;
 	private String addr;
 	private String phone;
 	private String geoPoint;
-	private Instant createTime;
-	private Instant updateTime;
 	
 	private Map<String, String> photoList;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getName() {
 		return name;
@@ -64,8 +52,12 @@ public class Hangout {
 	public void setGeoPoint(String geoPoint) {
 		this.geoPoint = geoPoint;
 	}
-	
-	public String toString(){
-		return JSON.toJSONString(this);
+
+	public Map<String, String> getPhotoList() {
+		return photoList;
+	}
+
+	public void setPhotoList(Map<String, String> photoList) {
+		this.photoList = photoList;
 	}
 }

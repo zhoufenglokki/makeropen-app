@@ -1,10 +1,8 @@
 makeropen-app
 =====
 
-Get Things Done
-=====
-2015-1-3
------
+## Get Things Done
+- 2015-1-3
 proxies in ionic.project with edgewar
 
 完成js端HangoutManager远程查询功能时，遇到CORS问题：
