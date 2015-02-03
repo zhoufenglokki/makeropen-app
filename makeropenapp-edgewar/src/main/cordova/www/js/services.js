@@ -56,8 +56,9 @@ angular.module('starter.services', [])
 
   return {
     queryHangoutByCity: function($scope, $http) {
-    $http.get("http://172.25.69.51:8080/edgewar/queryHangoutByCity.json")
-    .success(function(response) {$scope.hangoutList = response.hangoutList;});
+    $http.get("http://192.168.2.210:8080/edgewar/queryHangoutByCity.json")
+    .success(function(response) {$scope.hangoutList = response.hangoutList;
+	console.log(response.hangoutList);});
     }
   }
 });

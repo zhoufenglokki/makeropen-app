@@ -14,7 +14,7 @@ import com.makeropen.edgeserver.domain.LoginToken;
 import com.makeropen.edgeserver.domain.User;
 import com.makeropen.edgeserver.domain.result.LoginResult;
 
-@Component("loginManager")
+//@Component("loginManager")
 public class LoginManager {
 	@Resource(name = "loginDao")
 	private LoginDao loginDao;
