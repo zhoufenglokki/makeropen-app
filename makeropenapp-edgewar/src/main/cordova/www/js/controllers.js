@@ -60,12 +60,14 @@ angular.module('starter.controllers', []).controller('AppCtrl', function($scope,
 	$scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('HangoutCtrl', function($scope, $http, HangoutManager) {
+.controller('HangoutCtrl', ['$scope', 'HangoutManager', function($scope, HangoutManager) {
 
 	$scope.$on("$ionicView.afterEnter", function() {
-		HangoutManager.queryHangoutByCity($scope, $http);
+		HangoutManager.queryHangoutByCity().success(function(response){
+			$scope.hangoutList = response.hangoutList;
+		});
 	});
-})
+}])
 
 .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
 	$scope.friend = Friends.get($stateParams.friendId);
